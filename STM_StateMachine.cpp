@@ -8,7 +8,9 @@
 #include "STM_StateMachine.h"
 
 STM_StateMachine::STM_StateMachine()
-	: state_(NULL),
+	: stateList_(NULL),
+	  stateNum_(0),
+	  state_(NULL),
 	  eventID_(STM_INVALID_EVENT_ID)
 {
 	STM_PRINT_FN();
